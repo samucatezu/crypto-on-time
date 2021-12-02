@@ -1,8 +1,8 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import { Exchanges, Footer, Home, Markets, Navbar, News, AllCryptos, CryptoDetails } from './components';
-import './App.scss';
+import './App.css';
 
 const App = () => (
   <div className="app">
@@ -10,7 +10,7 @@ const App = () => (
       <Navbar />
     </div>
     <div className="main">
-      <routes>
+      <Switch>
         <Route exact path="/">
           <Home />
         </Route>
@@ -32,7 +32,7 @@ const App = () => (
         <Route exact path="/news">
           <News />
         </Route>
-      </routes>
+      </Switch>
       <Footer />
     </div>
   </div>

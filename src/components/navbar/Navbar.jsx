@@ -7,7 +7,7 @@ import { SiMarketo } from 'react-icons/si';
 import { BiNews } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 
-import './navbar.scss';
+import './navbar.css';
 
 export const Navbar = () => {
   const [activeMenu, setActiveMenu] = useState(true);

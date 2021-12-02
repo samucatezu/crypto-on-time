@@ -1,19 +1,13 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React from 'react';
 import millify from 'millify';
 
-import { getAllMarkets, useMarketsListSelector } from './marketsSlice';
-import './style.scss';
+import './style.css';
+import { useGetMarketsQuery } from '../../services/cryptoApi';
 
 export const Markets = () => {
-  const { marketsList } = useMarketsListSelector();
-  const dispatch = useDispatch();
+  const { data: marketsList } = useGetMarketsQuery();
 
-  useEffect(() => {
-    dispatch(getAllMarkets());
-  }, []);
-
-  if (!marketsList?.exchanges?.length) {
+  if (!marketsList?.data?.markets?.length) {
     return (
       <div className="loading">
         loading...
@@ -27,26 +21,24 @@ export const Markets = () => {
         <h2 className="home-heading">Top Crypto Markets</h2>
       </div>
       <div className="table-heading ">
-        <p>
-          Markets
-        </p>
+        <p>Markets</p>
         <p>24h Trade Volume</p>
         <p className="market-cap-title">Price</p>
         <p>Market Share</p>
       </div>
-      {marketsList.markets.map((exchange) => (
+      {marketsList?.data?.markets.map((exchange) => (
         <div key={exchange.id}>
           <div className="currency-card">
             <p className="currency-name-container ">
-              <span className="currency-rank">  {exchange.rank}.</span>
+              <span className="currency-rank">{exchange.rank}.</span>
               <img className="currency-image" src={exchange.sourceIconUrl} />
               <span className="curreny-name">{exchange.baseSymbol}/{exchange.quoteSymbol}</span>
             </p>
             <div className="currency-container">
-              <p className="currency-price">${exchange.volume && millify(exchange.volume)} </p>
+              <p className="currency-price">${millify(exchange.volume)}</p>
             </div>
-            <p className="currency-market-cap">${exchange.price && millify(exchange.price)}</p>
-            <p>{exchange.marketShare && millify(exchange.marketShare)}%</p>
+            <p className="currency-market-cap">${millify(exchange.price)}</p>
+            <p>{millify(exchange.marketShare)}%</p>
           </div>
         </div>
       ))}
