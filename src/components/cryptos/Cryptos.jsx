@@ -1,13 +1,15 @@
 import React from 'react';
 import millify from 'millify';
 import { Link } from 'react-router-dom';
-import { Card, Row, Col } from 'antd';
+import { Card, Row, Col, Spin } from 'antd';
+
+import './crypto.css';
 
 export const Cryptos = ({ data }) => {
   if (!data) {
     return (
       <div className="loading">
-        loading...
+        <Spin />
       </div>
     );
   }

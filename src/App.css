@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
     --text-primary:#000;
     --bgPrimary:#fff;
    --bgSecondary: #F9F9F9;
-   --pink: #ff5d8f;
+   --pink: #0071bd;
    --light-blue: #e6f7ff;
    --border: #d9d9d9;
 
@@ -17,11 +16,11 @@
 a:hover{
     color: var(--pink) !important;
 }
-body{
-    font-family: 'Roboto', sans-serif;
-}
+
 .app{
     display: flex;
+    overflow: hidden;
+
 }
 .navbar{
 flex: 0.2;
@@ -29,6 +28,18 @@ flex: 0.2;
 .main{
     flex: 0.8;
     width: 100%;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: auto;
+}
+@media screen and (max-width:1300px){
+    .main{
+        margin-left: 50px;
+    }
 }
 @media screen and (max-width:1170px){
     .main{
@@ -50,7 +61,7 @@ flex: 0.2;
     }
     .main{
         flex: 1;
-        margin-top: 80px;
+        margin-top: 30px;
         margin-left: 0px;
         margin-right: 10px;
         padding: 20px;
