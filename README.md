@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+ # CryptoOnTime
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Pereira-Araujo/users-api/blob/main/LICENSE.md)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+:construction: First experience with the world of React  :stuck_out_tongue:	
 
-## Available Scripts
+# HOME APP
+![Hub inicial](https://user-images.githubusercontent.com/86020448/145135770-76521038-04dc-4983-8483-6358eb097615.png)
+ <h1>
 
-In the project directory, you can run:
+<details>
+<summary>Crypto tab</summary>
+  
+![image](https://user-images.githubusercontent.com/86020448/145135803-d840a880-9219-4cc5-b8ae-7ecbb2c0042f.png)
 
-### `yarn start`
+ </details>   
+  
+<details>
+<summary>Exchange tab</summary>
+![image](https://user-images.githubusercontent.com/86020448/145135836-b7cceeaf-487c-4a0b-b616-b6b84a451b88.png)
+ </details>      
+      
+## Objetivo do desafio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Learn more about React. fetch data from multiple sources using RapidAPI. Create charts using Chart.js. State Management using Redux Toolkit.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Descrição:
 
-### `yarn test`
+ - the application was designed to monitor the largest existing cryptocurrencies and their brokers in real time and automatically.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Checklist:
+- [x] layout changes
+- [x] crypto search
+- [x] cards with items
+- [ ] favorite cryptos
+- [ ] news issues
+- [ ] baseboard fix
+- [ ] responsiveness
 
-### `yarn build`
+### what i used
+- [styled component](https://styled-components.com/) 
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [React router dom](https://v5.reactrouter.com/web/guides/quick-start) 
+- [Material-Ui](https://mui.com/pt/) 
+- [Ant Design](https://ant.design/) 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Credits for:
+  @adrianhajdin
+  
+- [Tutorial](https://www.youtube.com/watch?v=9DDX3US3kss&t=2178s}
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Instruções para rodar
+Por ser um projeto realizado com **ReactJS**, há a necessidade do **NodeJS**. Com ele instalado basta seguir os seguintes passos.
 
-### `yarn eject`
+No terminal, clone o projeto:
+```
+git clone 
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Entre na pasta do projeto:
+```
+cd desafio_james-tip
+cd james
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Instale as dependências:
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Execute a aplicação:
+```
+npm run start 
+```
