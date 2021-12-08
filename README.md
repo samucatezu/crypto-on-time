@@ -14,10 +14,6 @@
 
  </details>   
   
-<details>
-<summary>Exchange tab</summary>
-![image](https://user-images.githubusercontent.com/86020448/145135836-b7cceeaf-487c-4a0b-b616-b6b84a451b88.png)
- </details>      
       
 ## Objetivo do desafio
 
@@ -55,12 +51,6 @@ Por ser um projeto realizado com **ReactJS**, há a necessidade do **NodeJS**. C
 No terminal, clone o projeto:
 ```
 git clone 
-```
-
-Entre na pasta do projeto:
-```
-cd desafio_james-tip
-cd james
 ```
 
 Instale as dependências:
