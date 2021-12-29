@@ -1,7 +1,7 @@
  # CryptoOnTime
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Pereira-Araujo/users-api/blob/main/LICENSE.md)
 
-:construction: First experience with the world of React  :stuck_out_tongue:	
+:construction: First experience creating an WebApp using ReactJS, ChartJS and RapidAPI :stuck_out_tongue:	
 
 # HOME APP
 ![Hub inicial](https://user-images.githubusercontent.com/86020448/145135770-76521038-04dc-4983-8483-6358eb097615.png)
